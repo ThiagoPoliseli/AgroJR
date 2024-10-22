@@ -1,0 +1,112 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#whatsapp:hover {
+    background-color: #128C7E;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    border-radius: #25D366;
+    display: flexbox;
+    
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#assistant-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#assistant-box {
+    position: fixed;
+    bottom: 130px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+#logo {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
