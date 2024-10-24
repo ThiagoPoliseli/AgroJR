@@ -1,0 +1,142 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Usando a nova fonte */
+    line-height: 1.8; /* Aumentando o espaçamento entre linhas */
+    background: url('imagemfundo/plantafundo.png') no-repeat center center fixed; /* Nova imagem de fundo de alta qualidade */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-attachment: fixed; /* Mantém o fundo fixo mesmo ao rolar a página */
+    color: #333;
+}
+
+
+header {
+    display: flex; /* Para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Deixa a logo à esquerda e o menu à direita */
+    background: rgba(24, 23, 24, 0.8); /* Fundo semi-transparente para melhor legibilidade */
+    color: #fff;
+    padding: 10px 20px;
+    height: 80px; /* Reduz a altura do header */
+}
+
+#logo {
+    max-width: 120px; /* Define uma largura mais proporcional */
+    max-height: 60px; /* Limita a altura para um tamanho visualmente agradável */
+    margin: 0; /* Remove margens extras */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 30px; /* Aumenta o preenchimento interno */
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente para a seção */
+    border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2); /* Aumentando o sombreado */
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    animation: fadeIn 1s ease-in; /* Animação de fade-in */
+    font-size: 2rem; /* Aumentando o tamanho da fonte do título */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+}
+
+section p {
+    animation: fadeIn 1s ease-in 0.5s forwards; /* Animação de fade-in com delay */
+    opacity: 0; /* Começa invisível */
+    font-size: 1.2rem; /* Tamanho da fonte aumentado */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    color: #555; /* Cor do texto mais suave */
+    margin-bottom: 25px; /* Aumenta o espaçamento entre parágrafos */
+}
+
+#mapa-uem, #imagem-uem {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(24, 23, 24, 0.8); /* Fundo semi-transparente para melhor legibilidade */
+    color: #fff;
+    margin-top: 20px;
+    height: 100px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;  /* Largura fixa para deixar o botão redondo */
+    height: 60px; /* Altura fixa para deixar o botão redondo */
+    border-radius: 50%; /* Deixa o botão completamente redondo */
+    font-size: 30px; /* Tamanho do ícone */
+    text-align: center;
+    display: flex; /* Flexbox para centralizar o ícone */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-decoration: none;
+}
+
+#whatsapp:hover {
+    background-color: #128C7E;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
