@@ -1,0 +1,119 @@
+/* Reseta margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Faz o conteúdo crescer e ocupar o espaço disponível */
+section {
+    padding: 20px;
+    text-align: justify;
+    flex-grow: 1; /* Garante que o conteúdo ocupe o espaço entre o header e o footer */
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Botão do WhatsApp */
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#whatsapp:hover {
+    background-color: #128C7E;
+}
+
+/* Estilos para footer */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #181a18;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: auto; /* Empurra o footer para o final da página */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        max-width: 80px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #whatsapp {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    #whatsapp {
+        font-size: 18px;
+    }
+}
